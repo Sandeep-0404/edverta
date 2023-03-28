@@ -7,17 +7,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    width: 100vw;
-    overflow-x: hidden;
+main-container {
+    width: 100%;
+
 }
 
 .container {
-    height: 100vh;
+
     width: 80%;
     margin: 0 auto;
     background: #fff;
 }
+
+
 
 .nav-bar {
     background-color: #333333;
@@ -148,6 +150,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
+    width: 100%;
 
 }
 
@@ -184,15 +187,7 @@ button:hover {
     margin-bottom: 20px;
 }
 
-.card {
-    position: relative;
-    left: 200px;
-    width: 25%;
-    height: 500px;
-    margin-bottom: 200px;
-    background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
+
 
 .box {
     background-color: #ff978762;
@@ -200,6 +195,8 @@ button:hover {
     height: 440px;
     border-radius: 40px;
     transform: rotate(5deg);
+    position: relative;
+    right: 80px;
 }
 
 .box img {
@@ -339,9 +336,111 @@ ion-icon {
     padding: 0 5.5rem;
     margin-top: 30px;
     transition: 0.3s;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .discover:hover {
     letter-spacing: 1.5px;
+}
+
+.purple-heading {
+    background-color: rgb(76, 6, 76);
+    text-align: center;
+    margin-top: 300px;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.purple-heading h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.card {
+    width: 390px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 70px;
+}
+
+.heading-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.heading-part h1 {
+    color: #120b54;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.heading-part .live {
+    color: red;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.56rem;
+    border: 1px solid #666;
+    box-shadow: rgba(0, 0, 0, 0.149) 0px 2px 4px, rgba(0, 0, 0, 0.111) 0px 7px 13px -3px, rgba(0, 0, 0, 0.055) 0px 3px 0px inset;
+    padding: 4px 12px
+}
+
+.date-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    max-width: 70%;
+}
+
+.date,
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #353030;
+}
+
+.grey {
+    margin-right: 0.2rem;
+}
+
+.card-data p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: #625c5c;
+    line-height: 1.6;
+}
+
+.card button {
+    background-color: #24a0ed;
+    width: 80%;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    letter-spacing: 1.3px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
