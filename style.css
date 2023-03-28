@@ -444,3 +444,680 @@ ion-icon {
     align-items: center;
     justify-content: space-between;
 }
+
+.round-cards {
+    display: flex;
+}
+
+.round {
+    /* background-color: purple; */
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.second-purple {
+    margin-top: 15px;
+}
+
+
+/* ############### ACORDIAN ####################### */
+
+.acordian {
+
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 200px;
+}
+
+.transition,
+ul li i:before,
+ul li i:after,
+p,
+.acordian .social-icons {
+    transition: all 0.25s ease-in-out;
+}
+
+.flipIn,
+ul li,
+h1 {
+    animation: flipdown 0.5s ease both;
+}
+
+.no-select,
+h2 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+@media (max-width: 550px) {
+    body {
+        box-sizing: border-box;
+        transform: translate(0, 0);
+        max-width: 100%;
+        min-height: 100%;
+        margin: 0;
+        left: 0;
+    }
+}
+
+
+.acordian h1,
+.acordian h2 {
+    color: #000000;
+}
+
+.acordian h2 {
+    font-size: 0.9rem;
+    line-height: 34px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+    background-color: #fefffa;
+    margin: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.acordian p,
+.acordian .social-icons {
+    color: #171414;
+    font-size: 0.8rem;
+    line-height: 26px;
+    position: relative;
+    overflow: hidden;
+    max-height: 800px;
+    font-weight: 500;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 14px;
+    z-index: 2;
+}
+
+.acordian ul {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.acordian ul li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-bottom: 1px solid #666;
+}
+
+.acordian ul li:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.acordian ul li:nth-of-type(2) {
+    animation-delay: 0.75s;
+}
+
+.acordian ul li:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.acordian ul li:nth-of-type(4) {
+    animation-delay: 1.25s;
+}
+
+.acordian ul li:nth-of-type(5) {
+    animation-delay: 1.5s;
+}
+
+.acordian ul li:nth-of-type(6) {
+    animation-delay: 1.75s;
+}
+
+.acordian ul li:nth-of-type(7) {
+    animation-delay: 2s;
+}
+
+.acordian ul li:last-of-type {
+    padding-bottom: 0;
+}
+
+.acordian ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 0;
+}
+
+.acordian ul li i:before,
+.acordian ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: #666;
+    width: 3px;
+    height: 9px;
+}
+
+.acordian ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+.acordian ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+.acordian ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.acordian ul li input[type=checkbox]:checked~p,
+.acordian ul li input[type=checkbox]:checked~.social-icons {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+}
+
+.acordian ul li input[type=checkbox]:checked~i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+.acordian ul li input[type=checkbox]:checked~i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+    0% {
+        opacity: 0;
+        transform-origin: top center;
+        transform: rotateX(-90deg);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    80% {
+        transform: rotateX(8deg);
+    }
+
+    83% {
+        transform: rotateX(6deg);
+    }
+
+    92% {
+        transform: rotateX(-3deg);
+    }
+
+    100% {
+        transform-origin: top center;
+        transform: rotateX(0deg);
+    }
+}
+
+/* ############### ACORDIAN ####################### */
+
+.main-heading {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+}
+
+.social-icons {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+box-icon {
+    margin-right: 0.6rem;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 10px;
+    border-top: 1px solid #666;
+    box-shadow: 0 4px 4px #666;
+    margin-bottom: 40px;
+}
+
+.black-button {
+    background-color: black;
+    margin-left: 10px;
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+}
+
+.footer-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ############## GOOGLE PLAY ########################### */
+
+
+a.btn-google {
+    color: #fff
+}
+
+.btn {
+    padding: 10px 16px;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block
+}
+
+.btn:active:focus,
+.btn:focus {
+    outline: 0
+}
+
+.btn:focus,
+.btn:hover,
+.bn46:focus,
+.bn46:hover {
+    color: #333;
+    text-decoration: none;
+    outline: 0
+}
+
+.btn:active {
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+.btn-google {
+    color: #fff;
+    background-color: #111;
+    border-color: #000;
+    padding: 15px 16px 5px 40px;
+    position: relative;
+    font-family: fontfutura;
+    font-weight: 600
+}
+
+.btn-google:focus {
+    color: #fff;
+    background-color: #555;
+    border-color: #000
+}
+
+.btn-google:active,
+.btn-google:hover {
+    color: #fff;
+    background-color: #555;
+    border-color: #000;
+}
+
+.btn-google:before {
+    content: "";
+    background-image: url(https://4.bp.blogspot.com/-52U3eP2JDM4/WSkIT1vbUxI/AAAAAAAArQA/iF1BeARv2To-2FGQU7V6UbNPivuv_lccACLcB/s30/nexus2cee_ic_launcher_play_store_new-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    margin-top: -15px
+}
+
+.btn-google:after {
+    content: "GET IT ON";
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+/* ############## GOOGLE PLAY ########################### */
+
+/* ############## AP PLAY ########################### */
+
+
+a.btn-apple {
+    color: #fff
+}
+
+.btn {
+    padding: 10px 16px;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block
+}
+
+.btn:active:focus,
+.btn:focus {
+    outline: 0
+}
+
+.btn:focus,
+.btn:hover,
+.bn46:focus,
+.bn46:hover {
+    color: #333;
+    text-decoration: none;
+    outline: 0
+}
+
+.btn:active {
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+.btn-google,
+.btn-apple {
+    color: #fff;
+    background-color: #111;
+    border-color: #000;
+    padding: 15px 16px 5px 40px;
+    position: relative;
+    font-family: fontfutura;
+    font-weight: 600
+}
+
+.btn-apple:focus {
+    color: #fff;
+    background-color: #555;
+    border-color: #000
+}
+
+.btn-apple:active,
+.btn-apple:hover,
+.btn-google:active,
+.btn-google:hover {
+    color: #fff;
+    background-color: #555;
+    border-color: #000;
+}
+
+.btn-apple:before {
+    content: "";
+    background-image: url(./assests/apple.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    margin-top: -15px
+}
+
+.btn-apple:after {
+    content: "Download on the";
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+/* ############## APPLE PLAY ########################### */
+#map {
+    border-left: 2px solid green;
+    padding: 7px;
+}
+
+#map img {
+    width: 600px;
+}
+
+.footer-data {
+    display: flex;
+    margin-bottom: 150px;
+    justify-content: space-between;
+}
+
+.home-list {
+    margin-right: 50px;
+    border-right: 2px solid green;
+}
+
+.home-list h4 {
+    color: red;
+    font-weight: 600;
+}
+
+.home-list ul li {
+    font-weight: 600;
+    color: #4e4343;
+    list-style: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-top: 0.7rem;
+    flex: 1;
+}
+
+
+.address h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.address li {
+    list-style: none;
+    color: #4e4343;
+    list-style: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.address .timing {
+    margin-top: 10px;
+}
+
+.address .timing li {
+    margin-top: 2px;
+}
+
+.address .contact li {
+    text-transform: capitalize;
+    margin: 25px 0;
+}
+
+.address .query li {
+    text-transform: none;
+}
+
+.career {
+    background-color: black;
+    padding: 0 50px;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+.career:hover {
+    color: black;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    color: #120b54;
+}
+
+.green-box {
+    background-color: #16b841;
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.pillars {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pillar {
+    max-width: 250px;
+    margin: 0 75px;
+    margin-bottom: 100px;
+}
+
+.pillar h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pillar p {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.green-box box-icon {
+    font-weight: 600;
+    position: relative;
+    left: 4px;
+}
+
+.benifits h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.small {
+    text-transform: capitalize;
+}
+
+.reasons {
+    text-align: center;
+}
+
+.reasons h2 {
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+
+}
+
+.reasons-grp,
+.reason {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.reason {
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.reasons-grp {
+    width: 50%;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+}
+
+.reason-box {
+    padding: 10px 20px;
+    background-color: rgba(217, 30, 158, 0.541);
+    border-radius: 10px;
+    height: 50px;
+}
+
+.reason-box span {
+    color: rgb(81, 2, 81);
+    font-weight: 700;
+}
+
+.reason h6 {
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    color: #333333;
+    text-transform: uppercase;
+    max-width: 160px;
+}
+
+.reason .red {
+    background-color: rgba(255, 0, 0, 0.377);
+}
+
+.reason .red span {
+    color: red;
+}
+
+.reason .purple {
+    background-color: rgba(123, 64, 174, 0.511);
+}
+
+.reason .purple span {
+    color: rgb(47, 2, 82);
+}
+
+.reason .blue {
+    background-color: rgba(23, 175, 202, 0.385);
+}
+
+.reason .blue span {
+    color: rgb(3, 108, 113);
+}
+
+.reason .orange {
+    background-color: rgba(255, 132, 0, 0.377);
+}
+
+.reason .orange span {
+    color: rgb(205, 61, 5);
+}
