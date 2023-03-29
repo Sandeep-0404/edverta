@@ -39,10 +39,78 @@ main-container {
     margin: 0.5rem 0;
 }
 
-.nav-bar ul li a {
+.nav-bar ul li {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
+}
+
+.nav-bar ul li:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 600px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff0f;
+    z-index: 1000;
+}
+
+.above-finger {
+    padding: 10px;
+    background-color: #FDE7F9;
+    opacity: 1;
+    height: 80px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(88, 84, 84, 0.15) !important;
+    top: 110px;
+    z-index: 100;
+    left: 160px;
+}
+
+.above-hair {
+    padding: 10px;
+    background-color: #FDE7F9;
+    opacity: 1;
+    height: 80px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(88, 84, 84, 0.15) !important;
+    top: 210px;
+    z-index: 100;
+    left: 450px;
+}
+
+.above-finger h3,
+.above-hair h3 {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.above-finger h6,
+.above-hair h6 {
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+}
+
+.dropdown li {
+    color: #333333;
+    display: none;
+    margin: 10px;
+}
+
+.nav-bar ul li:hover>.dropdown li {
+    display: block;
 }
 
 .input-wrapper input {
