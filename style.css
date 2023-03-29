@@ -1295,7 +1295,55 @@ a.btn-apple {
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
+
+@media screen and (max-width: 1450px) {
+    .nav-bar ul {
+        width: 90%;
+    }
+
+    .box {
+        width: 456px;
+    }
+
+    .extra-container {
+        width: 88%;
+    }
+
+    .box img {
+        right: 150px;
+        top: 38px;
+    }
+
+    .card-container {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    .box img {
+        right: 150px;
+        top: 38px;
+    }
+
+    .box {
+        right: 21px;
+    }
+
+    .part {
+        margin: 0 auto;
+    }
+
+}
+
+
 @media screen and (max-width: 1150px) {
+
+
+    .part {
+        text-align: center;
+    }
+
     .part-2 {
         flex-direction: column;
     }
@@ -1303,6 +1351,31 @@ a.btn-apple {
     .card {
         margin: 50px auto;
     }
+
+    .nav-bar {
+        font-size: 0.7rem;
+    }
+
+    .nav-bar ul {
+        width: 90%;
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    .header .group {
+        width: 18rem;
+    }
+
+    .box {
+        display: none;
+    }
+
+    .part-3 {
+        flex-direction: column-reverse;
+    }
+
 }
 
 @media screen and (max-width:1010px) {
@@ -1317,6 +1390,31 @@ a.btn-apple {
 
     .card {
         margin: 50px auto;
+    }
+
+    .footer-data {
+        margin-bottom: 60px;
+    }
+
+    .footer-data .address {
+        border-left: none;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+
+    .benifits h1 {
+        text-align: center;
+        font-size: 2.3rem;
+        margin-bottom: 40px;
+    }
+
+    #map {
+        border-left: none;
+    }
+
+    .career {
+        margin-bottom: 30px;
     }
 }
 
@@ -1356,12 +1454,30 @@ a.btn-apple {
 
 /* For small devices */
 @media screen and (max-width: 600px) {
+
+
+    .purple-heading h1 {
+        font-size: 0.8rem;
+    }
+
+    .reason {
+        display: flex;
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    .header .group {
+        width: 18rem;
+    }
+
     .footer-button {
         display: none;
     }
 
     #map img {
-        width: 40%;
+        width: 60%;
     }
 
     .box {
@@ -1381,7 +1497,7 @@ a.btn-apple {
     }
 
     .benifits h1 {
-        font-size: 1rem;
+        font-size: 2.3rem;
     }
 
     .card {
