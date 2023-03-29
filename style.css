@@ -979,7 +979,7 @@ a.btn-apple {
 }
 
 #map img {
-    width: 600px;
+    width: 400px;
 }
 
 .footer-data {
@@ -1188,4 +1188,90 @@ a.btn-apple {
 
 .reason .orange span {
     color: rgb(205, 61, 5);
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1150px) {
+    .part-2 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1010px) {
+
+    .footer-data {
+        flex-direction: column;
+    }
+
+    .part {
+        flex-direction: column;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+
+    .input {
+        max-width: 15rem;
+    }
+
+    .part {
+        flex-direction: column;
+    }
+
+    .footer-data {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .part2-img img {
+        width: 70%;
+    }
+
+    .input {
+        width: 100%;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 600px) {
+    .footer-button {
+        display: none;
+    }
+
+    #map img {
+        width: 40%;
+    }
+
+    .box {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .options {
+        font-size: 0.5rem;
+    }
+
+    .long {
+        width: 40%;
+    }
+
+    .benifits h1 {
+        font-size: 1rem;
+    }
+
+    .card {
+        margin: 50px auto;
+    }
+
+    .nav-bar {
+        display: none;
+    }
 }
