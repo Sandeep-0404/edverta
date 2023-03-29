@@ -1344,6 +1344,10 @@ a.btn-apple {
         text-align: center;
     }
 
+    .buttons {
+        justify-content: space-evenly;
+    }
+
     .part-2 {
         flex-direction: column;
     }
