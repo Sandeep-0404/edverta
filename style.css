@@ -426,7 +426,7 @@ ion-icon {
 }
 
 .card {
-    width: 390px;
+    width: 400px;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     padding: 15px;
@@ -482,7 +482,8 @@ ion-icon {
 }
 
 .card-data p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    font-size: 0.6rem;
     font-weight: 500;
     letter-spacing: 0.8px;
     color: #625c5c;
@@ -520,8 +521,8 @@ ion-icon {
 .round {
     /* background-color: purple; */
     padding: 10px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     border-radius: 50%;
 }
@@ -652,6 +653,10 @@ h2 {
 
 .acordian ul li:nth-of-type(7) {
     animation-delay: 2s;
+}
+
+.acordian ul li:nth-of-type(8) {
+    animation-delay: 2.25s;
 }
 
 .acordian ul li:last-of-type {
@@ -990,7 +995,7 @@ a.btn-apple {
 
 .home-list {
     margin-right: 50px;
-    border-right: 2px solid green;
+
 }
 
 .home-list h4 {
@@ -1056,6 +1061,7 @@ a.btn-apple {
     padding: 10px;
     font-weight: 600;
     color: #120b54;
+    font-size: 0.6rem;
 }
 
 .green-box {
@@ -1190,6 +1196,101 @@ a.btn-apple {
     color: rgb(205, 61, 5);
 }
 
+.round-cards .first {
+    background-color: #FDE7F9;
+    color: rgb(205, 61, 5);
+    margin-left: 10px;
+    opacity: 1;
+    z-index: 100000;
+}
+
+.round-cards .second {
+    background-color: rgba(23, 175, 202);
+    color: rgb(3, 108, 113);
+    margin-left: 43px;
+    opacity: 1;
+    z-index: 1000;
+}
+
+.round-cards .third {
+    background-color: rgba(123, 64, 174);
+    color: rgb(47, 2, 82);
+    margin-left: 78px;
+    z-index: 2;
+}
+
+.round-cards .fourth {
+    background-color: rgb(245, 215, 66);
+    color: red;
+    margin-left: 111px;
+    z-index: 1;
+}
+
+.round-cards {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.round {
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.card button {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.mentors h3,
+.progress h3 {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #120b54;
+    margin-left: 10px;
+}
+
+
+.progress {
+    width: 60%;
+}
+
+.progress-heading,
+.mentors-progress {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-bar {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 15px;
+    position: relative;
+    left: 20px;
+}
+
+.skill-bar {
+    background-color: rgb(15, 189, 134);
+    color: white;
+    padding: 3%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.php {
+    width: 60%;
+}
+
+.footer-data .address {
+    padding: 0 20px;
+    border-left: 2px solid #16b841;
+}
+
 
 
 /*=============== BREAKPOINTS ===============*/
@@ -1197,6 +1298,10 @@ a.btn-apple {
 @media screen and (max-width: 1150px) {
     .part-2 {
         flex-direction: column;
+    }
+
+    .card {
+        margin: 50px auto;
     }
 }
 
@@ -1208,6 +1313,10 @@ a.btn-apple {
 
     .part {
         flex-direction: column;
+    }
+
+    .card {
+        margin: 50px auto;
     }
 }
 
@@ -1225,6 +1334,10 @@ a.btn-apple {
     .footer-data {
         flex-direction: column;
     }
+
+    .card {
+        margin: 50px auto;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1234,6 +1347,10 @@ a.btn-apple {
 
     .input {
         width: 100%;
+    }
+
+    .card {
+        margin: 50px auto;
     }
 }
 
