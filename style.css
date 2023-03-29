@@ -521,8 +521,8 @@ ion-icon {
 .round {
     /* background-color: purple; */
     padding: 10px;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     text-align: center;
     border-radius: 50%;
 }
@@ -1199,7 +1199,6 @@ a.btn-apple {
 .round-cards .first {
     background-color: #FDE7F9;
     color: rgb(205, 61, 5);
-    margin-left: 10px;
     opacity: 1;
     z-index: 100000;
 }
@@ -1207,7 +1206,7 @@ a.btn-apple {
 .round-cards .second {
     background-color: rgba(23, 175, 202);
     color: rgb(3, 108, 113);
-    margin-left: 43px;
+    margin-left: 33px;
     opacity: 1;
     z-index: 1000;
 }
@@ -1215,20 +1214,21 @@ a.btn-apple {
 .round-cards .third {
     background-color: rgba(123, 64, 174);
     color: rgb(47, 2, 82);
-    margin-left: 78px;
+    margin-left: 65px;
     z-index: 2;
 }
 
 .round-cards .fourth {
     background-color: rgb(245, 215, 66);
     color: red;
-    margin-left: 111px;
+    margin-left: 98px;
     z-index: 1;
 }
 
 .round-cards {
     position: relative;
     margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 .round {
@@ -1390,5 +1390,44 @@ a.btn-apple {
 
     .nav-bar {
         display: none;
+    }
+
+    .round {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.5rem;
+    }
+
+    .round-cards .first {
+        background-color: #FDE7F9;
+        color: rgb(205, 61, 5);
+        opacity: 1;
+        z-index: 100000;
+    }
+
+    .round-cards .second {
+        background-color: rgba(23, 175, 202);
+        color: rgb(3, 108, 113);
+        margin-left: 23px;
+        opacity: 1;
+        z-index: 1000;
+    }
+
+    .round-cards .third {
+        background-color: rgba(123, 64, 174);
+        color: rgb(47, 2, 82);
+        margin-left: 48px;
+        z-index: 2;
+    }
+
+    .round-cards .fourth {
+        background-color: rgb(245, 215, 66);
+        color: red;
+        margin-left: 71px;
+        z-index: 1;
+    }
+
+    .card {
+        width: 500px;
     }
 }
